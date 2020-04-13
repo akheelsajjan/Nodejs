@@ -5,15 +5,14 @@ appConfig.allowedCorsOrigin = "*";
 appConfig.env = "dev";
 
 appConfig.db = {
-
-}
-
-appConfig.apiversion = '/api/v1';
+    uri: 'mongodb://127.0.0.1:27017/blogAppDB',
+};
+appConfig.apiVersion = '/api/v1';
 
 module.exports = {
     port: appConfig.port,
     allowedCorsOrigin: appConfig.allowedCorsOrigin,
     env: appConfig.env,
     db: appConfig.db,
-    apiver: appConfig.apiversion
+    apiVersion: appConfig.apiVersion
 }
